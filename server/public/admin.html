@@ -1,0 +1,221 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin</title>
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:sans-serif;
+}
+
+body{
+  background:#0f172a;
+  color:white;
+}
+
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:20px;
+}
+
+.form{
+  background:#111827;
+  padding:20px;
+  border-radius:14px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  margin-bottom:30px;
+}
+
+input, select{
+  padding:12px;
+  border:none;
+  border-radius:10px;
+  background:#1f2937;
+  color:white;
+}
+
+button{
+  padding:12px;
+  border:none;
+  border-radius:10px;
+  background:#22c55e;
+  color:white;
+  cursor:pointer;
+}
+
+.list{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:#111827;
+  border-radius:14px;
+  overflow:hidden;
+}
+
+.card img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+
+.card-body{
+  padding:14px;
+}
+
+.delete{
+  background:red;
+  margin-top:10px;
+  width:100%;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="form">
+
+<h2>Add Food</h2>
+
+<input type="text" id="title" placeholder="Food name">
+
+<select id="category">
+<option value="">Category</option>
+<option>FastFood</option>
+<option>Uzbek Milliy Taom</option>
+<option>Desert</option>
+<option>Ichimliklar</option>
+</select>
+
+<input type="number" id="price" placeholder="Price">
+
+<input type="text" id="bat" placeholder="Batafsil">
+
+<input type="file" id="imageFile">
+
+<button onclick="addFood()">ADD FOOD</button>
+
+<button onclick="window.location.href='index.html'">
+BACK
+</button>
+
+</div>
+
+<div class="list" id="list"></div>
+
+</div>
+
+<script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+
+<script>
+
+const socket = io();
+
+let foods = [];
+
+socket.on("update-foods", (data)=>{
+
+  foods = data;
+
+  render();
+
+});
+
+async function addFood(){
+
+  const title = document.getElementById("title").value;
+  const category = document.getElementById("category").value;
+  const price = document.getElementById("price").value;
+  const bat = document.getElementById("bat").value;
+  const file = document.getElementById("imageFile").files[0];
+
+  if(!title || !category || !price || !bat || !file){
+    alert("Hamma joyni toldir");
+    return;
+  }
+
+  const formData = new FormData();
+
+  formData.append("image", file);
+
+  const res = await fetch("/upload", {
+    method:"POST",
+    body:formData
+  });
+
+  const data = await res.json();
+
+  socket.emit("add-food", {
+    title,
+    category,
+    price,
+    bat,
+    image:data.imagePath
+  });
+
+  document.getElementById("title").value = "";
+  document.getElementById("price").value = "";
+  document.getElementById("bat").value = "";
+  document.getElementById("imageFile").value = "";
+
+}
+
+function deleteFood(id){
+
+  socket.emit("delete-food", id);
+
+}
+
+function render(){
+
+  const list = document.getElementById("list");
+
+  list.innerHTML = "";
+
+  foods.forEach(f => {
+
+    list.innerHTML += `
+    
+    <div class="card">
+
+      <img src="${f.image}">
+
+      <div class="card-body">
+
+        <h2>${f.title}</h2>
+
+        <p>${f.category}</p>
+
+        <p>${f.price} so'm</p>
+
+        <button class="delete" onclick="deleteFood(${f.id})">
+          DELETE
+        </button>
+
+      </div>
+
+    </div>
+    
+    `;
+
+  });
+
+}
+
+</script>
+
+</body>
+</html>
