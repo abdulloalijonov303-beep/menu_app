@@ -21,6 +21,30 @@
    </div>
    <div class="container2">
       <div class="nav">
+         <div class="lang-switcher">
+  <button id="langBtn" class="lang-btn">
+    <img id="currentFlag" src="https://flagcdn.com/w40/gb.png" />
+    <span id="currentLang">English</span>
+    <span>▼</span>
+  </button>
+
+  <div id="langMenu" class="lang-menu hidden">
+    <div class="lang-item" data-lang="en">
+      <img src="https://flagcdn.com/w40/gb.png" />
+      <span>English</span>
+    </div>
+
+    <div class="lang-item" data-lang="uz">
+      <img src="https://flagcdn.com/w40/uz.png" />
+      <span>O‘zbekcha</span>
+    </div>
+
+    <div class="lang-item" data-lang="ru">
+      <img src="https://flagcdn.com/w40/ru.png" />
+      <span>Русский</span>
+    </div>
+  </div>
+</div>
          <div class="start">
             <div class="s"> <img
                   src="./logo.jpg"
@@ -47,6 +71,62 @@
    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
 
    <script>
+
+const langBtn = document.getElementById("langBtn");
+const langMenu = document.getElementById("langMenu");
+const currentFlag = document.getElementById("currentFlag");
+const currentLang = document.getElementById("currentLang");
+
+const languages = {
+  en: {
+    name: "English",
+    flag: "https://flagcdn.com/w40/gb.png"
+  },
+  uz: {
+    name: "O‘zbekcha",
+    flag: "https://flagcdn.com/w40/uz.png"
+  },
+  ru: {
+    name: "Русский",
+    flag: "https://flagcdn.com/w40/ru.png"
+  }
+};
+
+// open/close menu
+langBtn.addEventListener("click", () => {
+  langMenu.classList.toggle("hidden");
+});
+
+// change language
+document.querySelectorAll(".lang-item").forEach(item => {
+  item.addEventListener("click", () => {
+    const lang = item.getAttribute("data-lang");
+
+    currentLang.textContent = languages[lang].name;
+    currentFlag.src = languages[lang].flag;
+
+    localStorage.setItem("lang", lang);
+    langMenu.classList.add("hidden");
+
+    applyLanguage(lang);
+  });
+});
+
+// simple example text change
+function applyLanguage(lang) {
+  const texts = {
+    en: "Welcome to our menu",
+    uz: "Bizning menyuga xush kelibsiz",
+    ru: "Добро пожаловать в меню"
+  };
+
+  document.getElementById("title").textContent = texts[lang];
+}
+
+// load saved language
+const savedLang = localStorage.getItem("lang") || "en";
+document.querySelector(`[data-lang="${savedLang}"]`).click();
+
 
       const socket = io();
 

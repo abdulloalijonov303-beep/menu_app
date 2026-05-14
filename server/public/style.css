@@ -18,6 +18,65 @@ body{
   overflow-x:hidden;
 }
 
+.lang-switcher {
+  position: relative;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+}
+
+.lang-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: #fff;
+  cursor: pointer;
+  min-width: 160px;
+}
+
+.lang-btn img {
+  width: 22px;
+  height: 16px;
+  border-radius: 3px;
+}
+
+.lang-menu {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  width: 180px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  overflow: hidden;
+  z-index: 10;
+}
+
+.lang-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.lang-item:hover {
+  background: #f5f5f5;
+}
+
+.lang-item img {
+  width: 22px;
+  height: 16px;
+  border-radius: 3px;
+}
+
+.hidden {
+  display: none;
+}
+
 /* ================= NAVBAR ================= */
 .nav{
   position:fixed;
