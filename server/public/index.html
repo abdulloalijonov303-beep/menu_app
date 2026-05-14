@@ -10,6 +10,15 @@
 </head>
 
 <body>
+   <!-- LOCK SCREEN -->
+   <div class="lock-screen" id="lockScreen">
+      <div class="lock-box">
+         <h2>🔐 Admin Login</h2> <input type="text" id="login" placeholder="Login"> <input type="password" id="password"
+            placeholder="Password"> <button onclick="checkLogin()">ENTER</button> <button
+            onclick="back()">Orqaga</button>
+         <p id="errorText"></p>
+      </div>
+   </div>
    <div class="container2">
       <div class="nav">
          <div class="start">
@@ -33,12 +42,7 @@
          <div class="taomlar" id="menu"></div>
       </div>
    </div>
-
-   <div class="container">
-
-      <div class="menu" id="menu"></div>
-
-   </div>
+   
 
    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
 
@@ -92,6 +96,31 @@
          });
 
       }
+
+
+      function openLockScreen(){
+   document.getElementById("lockScreen").classList.add("active") } 
+
+
+function checkLogin(){
+   const login = document.getElementById("login").value 
+   const password = document.getElementById("password").value 
+   if(login === "admin" && password === "1234")
+   { 
+    window.location.href = "admin.html" 
+
+   }
+    else { document.getElementById("errorText").innerText = "Login yoki parol xato" 
+
+    } }
+
+
+function toggleMenu(x){ x.classList.toggle("active")
+ document.getElementById("menu2").classList.toggle("active") }
+
+ function back(){
+  window.location.href = "index.html"
+ }
 
    </script>
 

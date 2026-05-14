@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "menu-2",
+=======
+  "name": "server",
+>>>>>>> a571a631db06442faed796423a2272e4c105a0b2
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

@@ -1,0 +1,290 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Page</title>
+
+<style>
+
+/* ========== RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+/* ========== WRAPPER ========== */
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* ========== CARD ========== */
+.card {
+  width: 100%;
+  max-width: 900px;
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+/* ========== IMAGE ========== */
+.img-box {
+  width: 100%;
+  height: 100%;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ========== INFO ========== */
+.info {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tag {
+  background: #22c55e;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  width: fit-content;
+}
+
+.title {
+  font-size: 28px;
+}
+
+.price {
+  font-size: 22px;
+  color: #facc15;
+  font-weight: bold;
+}
+
+.desc {
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+/* ========== BUTTONS ========== */
+.btn {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.back {
+  background: #334155;
+  color: white;
+}
+
+.back:hover {
+  background: #475569;
+}
+
+.call {
+  background: #22c55e;
+  color: white;
+}
+
+.call:hover {
+  background: #16a34a;
+}
+.acall{
+  color: white;
+  text-decoration: none;
+}
+
+/* ========== MOBILE ========== */
+@media (max-width: 768px) {
+
+  .card {
+    grid-template-columns: 1fr;
+  }
+
+  .img-box {
+    height: 250px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="page">
+  <div id="product"></div>
+</div>
+
+<script>
+
+let foods = [ { id: 1, title: "Mastava", category: "Uzbek Milliy Taom", price: 20000, currency: "so'm", image: "./very-hungry-nomads-mastava-canva-1024x768.webp" },
+  { id: 2, title: "Osh (Plov)", category: "Uzbek Milliy Taom", price: 25000, currency: "so'm", image: "https://www.mircorp.com/wp-content/uploads/2025/04/IMG_9576.jpg" },
+  { id: 3, title: "Lag'mon", category: "Uzbek Milliy Taom", price: 22000, currency: "so'm", image: "https://avatars.mds.yandex.net/get-altay/6236523/2a000001811b007a2d7f7173cbc8367331f1/L_height" },
+  { id: 4, title: "Shashlik", category: "Uzbek Milliy Taom", price: 18000, currency: "so'm", image: "https://nutriscan.app/calories-nutrition/images/shashlik-59baf.webp" },
+  { id: 5, title: "Somsa", category: "Uzbek Milliy Taom", price: 8000, currency: "so'm", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2oJjxm7SrAHP112gHcB5RJkLYom4AgzLlzg&s" },
+  { id: 6, title: "Manti", category: "Uzbek Milliy Taom", price: 23000, currency: "so'm", image: "https://static.wixstatic.com/media/bec19b_f7e6fe0e40114f0c95681cba2c403739~mv2.webp/v1/fill/w_758,h_442,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Manti%20From%20Kazakhstan.webp" },
+  { id: 7, title: "Chuchvara", category: "Uzbek Milliy Taom", price: 18000, currency: "so'm", image: "https://narrativedictionary.navoiy-uni.uz/Files/a949b166-59a7-4a42-afe1-fe6f9716ebaf.jpg" },
+  { id: 8, title: "Dimlama", category: "Uzbek Milliy Taom", price: 24000, currency: "so'm", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnv7zqU3jCuQ3plVGRrywyWLTEOfVYHyc-NA&s" },
+  { id: 9, title: "Shurva", category: "Uzbek Milliy Taom", price: 20000, currency: "so'm", image: "https://en.ferganatourism.uz/d/shurpa3.jpg" },
+  { id: 10, title: "Qozon Kabob", category: "Uzbek Milliy Taom", price: 30000, currency: "so'm", image: "https://lh3.googleusercontent.com/proxy/nIUudijQomEXQ4AQ9l90aICPOGYTknP13nhdiVm_OVXFJ8KOs16NNKd2zPEZaoQZXU93yPNvo9wTsVQSTs4_eBEzMrsdl3-qWC25_q4_XIvSAaW5X_mePAByaafb4Rsz5XgGOcImrM2gnWolbB9rycuY30eCxU9pIfKMFXrWzI-VUA" },
+  { id: 11, title: "Norin", category: "Uzbek Milliy Taom", price: 28000, currency: "so'm", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtTTRr4FEDlkzt5DFOrfb4NIknvU3NX5yrKA&s" },
+  { id: 12, title: "Tandir Kabob", category: "Uzbek Milliy Taom", price: 32000, currency: "so'm", image: "https://www.gazeta.uz/media/img/2017/01/qpq8qW14853298118139_b.jpg" },
+  { id: 13, title: "Halim", category: "Uzbek Milliy Taom", price: 22000, currency: "so'm", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5acJrlRpZUeINhx0zKszq0rbqVZRELoIoEA&s" },
+  { id: 14, title: "Hasip", category: "Uzbek Milliy Taom", price: 20000, currency: "so'm", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlzSsOv-j1vJ-3qBb5Ontd517IIJXFKkxejg&s" },
+  { id: 15, title: "Beshbarmoq", category: "Uzbek Milliy Taom", price: 30000, currency: "so'm", image: "https://data.daryo.uz/media/cache/2020/04/beshm-698x540.jpg" },
+  { id: 16, title: "Gumma", category: "Uzbek Milliy Taom", price: 7000, currency: "so'm", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhQi0R6j1ue6-dO5SUBfAr1PGBuZG_otFEOw&s" },
+  { id: 17, title: "Kazan Patir", category: "Uzbek Milliy Taom", price: 12000, currency: "so'm", image: "https://i.ytimg.com/vi/kenpT-xRQO0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAD5mnFve3GGtgKkO_rxBnVk66S6Q" },
+  { id: 18, title: "Obi Non", category: "Uzbek Milliy Taom", price: 4000, currency: "so'm", image: "https://www.vidhyashomecooking.com/wp-content/uploads/2017/04/ObiNonFeature-500x500.jpg" },
+  { id: 19, title: "Chalop", category: "Uzbek Milliy Taom", price: 10000, currency: "so'm", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD70FgU8WRDsiYClbw_S9iDfwb61xbe72vVA&s" },
+  { id: 20, title: "Go'shtli Qovurma", category: "Uzbek Milliy Taom", price: 26000, currency: "so'm", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiiLM1n5xtMI1B6ajhUNZx3DSeTVnlxoj13w&s" },
+  { id: 21, title: "Burger", category: "FastFood", price: 18000, currency: "so'm", image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd" },
+  { id: 22, title: "Cheeseburger", category: "FastFood", price: 20000, currency: "so'm", image: "https://images.unsplash.com/photo-1550547660-d9450f859349" },
+  { id: 23, title: "Double Burger", category: "FastFood", price: 25000, currency: "so'm", image: "https://theeburgerdude.com/wp-content/uploads/2023/03/Double-Del-01-scaled.webp" },
+  { id: 24, title: "Hot Dog", category: "FastFood", price: 12000, currency: "so'm", image: "https://static01.nyt.com/images/2024/06/28/multimedia/28GRILL-HOTDOGS-REX-cqwj/01GRILL-HOTDOGS-REX-cqwj-mediumSquareAt3X.jpg" },
+  { id: 25, title: "Pizza Peperonni", category: "FastFood", price: 45000, currency: "so'm", image: "https://ik.imagekit.io/smithfield/armour/4353bced-f940-00d0-8c6e-13a0a4a7f5c2/2ac60829-5178-4a6e-80cf-6ca43d862cee/Quick-and-Easy-Pepperoni-Pizza-700x700.jpeg?tr=w-1160,c-at_max,f-auto" },
+  { id: 26, title: "Pizza Margarita", category: "FastFood", price: 40000, currency: "so'm", image: "https://recetasdecocina.elmundo.es/wp-content/uploads/2025/09/pizza-margarita-1024x683.jpg" },
+  { id: 27, title: "French Fries", category: "FastFood", price: 10000, currency: "so'm", image: "https://images.unsplash.com/photo-1576107232684-1279f390859f" },
+  { id: 28, title: "Chicken Nuggets", category: "FastFood", price: 16000, currency: "so'm", image: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d" },
+  { id: 29, title: "Fried Chicken", category: "FastFood", price: 22000, currency: "so'm", image: "https://images.unsplash.com/photo-1562967916-eb82221dfb92" },
+  { id: 30, title: "Chicken Burger", category: "FastFood", price: 19000, currency: "so'm", image: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092" },
+  { id: 31, title: "Shawarma", category: "FastFood", price: 15000, currency: "so'm", image: "https://foxeslovelemons.com/wp-content/uploads/2023/06/Chicken-Shawarma-8.jpg" },
+  { id: 32, title: "Doner Kebab", category: "FastFood", price: 17000, currency: "so'm", image: "https://static01.nyt.com/images/2025/12/22/multimedia/22FD-VIRAL-DONER-KEBABREX-KW-Viral-Doner-Kebab-lhzm/22FD-VIRAL-DONER-KEBABREX-KW-Viral-Doner-Kebab-lhzm-videoSixteenByNineJumbo1600.jpg" },
+  { id: 33, title: "Taco", category: "FastFood", price: 14000, currency: "so'm", image: "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b" },
+  { id: 34, title: "Burrito", category: "FastFood", price: 20000, currency: "so'm", image: "https://images.unsplash.com/photo-1626700051175-6818013e1d4f" },
+  { id: 35, title: "Sandwich", category: "FastFood", price: 13000, currency: "so'm", image: "https://www.eatingwell.com/thmb/cwCxxIpDoKC8cQk7cTnY9FpyDE4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Veggie--Cream-Cheese-Sandwich-Beauty-1x1-56919_preview_maxWidth_4000_maxHeight_4000_ppi_300_quality_100-fdb2de8c05234e5a97f37fa3ad485220.jpg" },
+  { id: 36, title: "Club Sandwich", category: "FastFood", price: 18000, currency: "so'm", image: "https://www.tasteofhome.com/wp-content/uploads/2025/04/Turkey-Club-Sandwich_EXPS_FT25_278726_EC_0408_5.jpg" },
+  { id: 37, title: "Onion Rings", category: "FastFood", price: 9000, currency: "so'm", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_FKUjlqURBS6yqDjjDmbcN5MUBz2V-QAeiw&s" },
+  { id: 38, title: "Mozzarella Sticks", category: "FastFood", price: 15000, currency: "so'm", image: "https://sugarspunrun.com/wp-content/uploads/2021/07/Homemade-Mozzarella-Sticks-Recipe-1-of-1.jpg" },
+  { id: 39, title: "Chicken Wrap", category: "FastFood", price: 17000, currency: "so'm", image: "https://static.toiimg.com/thumb/75456053.cms?imgsize=1386602&width=800&height=800" },
+  { id: 40, title: "Nachos", category: "FastFood", price: 16000, currency: "so'm", image: "https://www.emborg.com/app/uploads/2023/07/1200x900px_3_Step_Nachos_Snack.png" },
+   { id: 41, title: "Caesar Salad", category: "Salatlar", price: 18000, currency: "so'm", image: "https://images.unsplash.com/photo-1550304943-4f24f54ddde9" },
+  { id: 42, title: "Greek Salad", category: "Salatlar", price: 17000, currency: "so'm", image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c" },
+  { id: 43, title: "Olivier Salad", category: "Salatlar", price: 16000, currency: "so'm", image: "https://upload.wikimedia.org/wikipedia/commons/3/3c/Olivier_salad.jpg" },
+  { id: 44, title: "Achichuk Salad", category: "Salatlar", price: 10000, currency: "so'm", image: "https://upload.wikimedia.org/wikipedia/commons/6/6f/Achichuk.jpg" },
+  { id: 45, title: "Fresh Vegetable Salad", category: "Salatlar", price: 12000, currency: "so'm", image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd" },
+  { id: 46, title: "Chicken Salad", category: "Salatlar", price: 19000, currency: "so'm", image: "https://images.unsplash.com/photo-1604908177225-9f7c1f4d0e2d" },
+  { id: 47, title: "Tuna Salad", category: "Salatlar", price: 20000, currency: "so'm", image: "https://images.unsplash.com/photo-1569058242403-cc2c3f8e3d4f" },
+  { id: 48, title: "Cabbage Salad", category: "Salatlar", price: 9000, currency: "so'm", image: "https://images.unsplash.com/photo-1625944525533-473f1c3c1c4d" },
+  { id: 49, title: "Carrot Salad", category: "Salatlar", price: 8000, currency: "so'm", image: "https://images.unsplash.com/photo-1582515073490-dc0c9c3a6f3d" },
+  { id: 50, title: "Fruit Salad", category: "Salatlar", price: 15000, currency: "so'm", image: "https://images.unsplash.com/photo-1576402187878-974f70c890a5" },
+  { id: 51, title: "Avocado Salad", category: "Salatlar", price: 22000, currency: "so'm", image: "https://images.unsplash.com/photo-1605478580700-4d0b5b8b6c2c" },
+  { id: 52, title: "Shrimp Salad", category: "Salatlar", price: 26000, currency: "so'm", image: "https://images.unsplash.com/photo-1617196038437-4c2f4e3b2f6a" },
+  { id: 53, title: "Beetroot Salad", category: "Salatlar", price: 11000, currency: "so'm", image: "https://images.unsplash.com/photo-1604908177094-2f4e3b1c4c2d" },
+  { id: 54, title: "Egg Salad", category: "Salatlar", price: 13000, currency: "so'm", image: "https://images.unsplash.com/photo-1589308078056-fb7b47d36c5e" },
+  { id: 55, title: "Corn Salad", category: "Salatlar", price: 12000, currency: "so'm", image: "https://images.unsplash.com/photo-1625944525637-8b3f1c2e1c2d" },
+  { id: 56, title: "Tomato Salad", category: "Salatlar", price: 9000, currency: "so'm", image: "https://images.unsplash.com/photo-1568605114967-8130f3a36994" },
+  { id: 57, title: "Cucumber Salad", category: "Salatlar", price: 8000, currency: "so'm", image: "https://images.unsplash.com/photo-1604908177301-4b9d2c6fbb36" },
+  { id: 58, title: "Mixed Salad", category: "Salatlar", price: 14000, currency: "so'm", image: "https://images.unsplash.com/photo-1505576633757-0ac1084af824" },
+  { id: 59, title: "Pasta Salad", category: "Salatlar", price: 20000, currency: "so'm", image: "https://images.unsplash.com/photo-1523987355523-c7b5b0723c6e" },
+  { id: 60, title: "Quinoa Salad", category: "Salatlar", price: 23000, currency: "so'm", image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd" },
+    { id: 61, title: "Chocolate Cake", category: "Desert", price: 25000, currency: "so'm", image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587" },
+  { id: 62, title: "Cheesecake", category: "Desert", price: 28000, currency: "so'm", image: "https://images.unsplash.com/photo-1533134242443-d4fd215305ad" },
+  { id: 63, title: "Ice Cream", category: "Desert", price: 15000, currency: "so'm", image: "https://images.unsplash.com/photo-1501443762994-82bd5dace89a" },
+  { id: 64, title: "Brownie", category: "Desert", price: 20000, currency: "so'm", image: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c" },
+  { id: 65, title: "Cupcake", category: "Desert", price: 12000, currency: "so'm", image: "https://images.unsplash.com/photo-1519869325930-281384150729" },
+  { id: 66, title: "Donut", category: "Desert", price: 10000, currency: "so'm", image: "https://images.unsplash.com/photo-1551024601-bec78aea704b" },
+  { id: 67, title: "Tiramisu", category: "Desert", price: 30000, currency: "so'm", image: "https://images.unsplash.com/photo-1541783245831-57d6fb0926d3" },
+  { id: 68, title: "Pancake", category: "Desert", price: 18000, currency: "so'm", image: "https://images.unsplash.com/photo-1528207776546-365bb710ee93" },
+  { id: 69, title: "Waffle", category: "Desert", price: 20000, currency: "so'm", image: "https://images.unsplash.com/photo-1506084868230-bb9d95c24759" },
+  { id: 70, title: "Macarons", category: "Desert", price: 22000, currency: "so'm", image: "https://images.unsplash.com/photo-1511910849309-0dffb878d9b0" },
+  { id: 71, title: "Apple Pie", category: "Desert", price: 24000, currency: "so'm", image: "https://images.unsplash.com/photo-1568571780765-9276ac8b75a7" },
+  { id: 72, title: "Fruit Tart", category: "Desert", price: 26000, currency: "so'm", image: "https://images.unsplash.com/photo-1514517521153-1be72277b32f" },
+  { id: 73, title: "Chocolate Muffin", category: "Desert", price: 13000, currency: "so'm", image: "https://images.unsplash.com/photo-1607958996333-41aef7caefaa" },
+  { id: 74, title: "Lava Cake", category: "Desert", price: 27000, currency: "so'm", image: "https://images.unsplash.com/photo-1606312619070-d48b4c652a52" },
+  { id: 75, title: "Milk Cake", category: "Desert", price: 22000, currency: "so'm", image: "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f" },
+  { id: 76, title: "Custard", category: "Desert", price: 14000, currency: "so'm", image: "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f" },
+  { id: 77, title: "Jelly Dessert", category: "Desert", price: 12000, currency: "so'm", image: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d" },
+  { id: 78, title: "Strawberry Cake", category: "Desert", price: 28000, currency: "so'm", image: "https://images.unsplash.com/photo-1464347744102-11db6282f854" },
+  { id: 79, title: "Banana Split", category: "Desert", price: 23000, currency: "so'm", image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587" },
+  { id: 80, title: "Chocolate Mousse", category: "Desert", price: 26000, currency: "so'm", image: "https://images.unsplash.com/photo-1563805042-7684c019e1cb" },
+    { id: 81, title: "Coca Cola", category: "Ichimliklar", price: 8000, currency: "so'm", image: "https://images.unsplash.com/photo-1629203432175-0c9b5f3a0b1c" },
+  { id: 82, title: "Pepsi", category: "Ichimliklar", price: 8000, currency: "so'm", image: "https://images.unsplash.com/photo-1581006852262-e4307cf6283a" },
+  { id: 83, title: "Fanta", category: "Ichimliklar", price: 8000, currency: "so'm", image: "https://images.unsplash.com/photo-1613478223719-2ab802602423" },
+  { id: 84, title: "Sprite", category: "Ichimliklar", price: 8000, currency: "so'm", image: "https://images.unsplash.com/photo-1622483767028-3f66f32a3d8c" },
+  { id: 85, title: "Water", category: "Ichimliklar", price: 3000, currency: "so'm", image: "https://images.unsplash.com/photo-1564419320461-6870880221ad" },
+  { id: 86, title: "Coffee", category: "Ichimliklar", price: 12000, currency: "so'm", image: "https://images.unsplash.com/photo-1509042239860-f550ce710b93" },
+  { id: 87, title: "Latte", category: "Ichimliklar", price: 15000, currency: "so'm", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348" },
+  { id: 88, title: "Cappuccino", category: "Ichimliklar", price: 15000, currency: "so'm", image: "https://images.unsplash.com/photo-1534778101976-62847782c213" },
+  { id: 89, title: "Green Tea", category: "Ichimliklar", price: 10000, currency: "so'm", image: "https://images.unsplash.com/photo-1505576399279-565b52d4ac71" },
+  { id: 90, title: "Black Tea", category: "Ichimliklar", price: 9000, currency: "so'm", image: "https://images.unsplash.com/photo-1528825871115-3581a5387919" },
+  { id: 91, title: "Milkshake", category: "Ichimliklar", price: 18000, currency: "so'm", image: "https://images.unsplash.com/photo-1551024709-8f23befc6f87" },
+  { id: 92, title: "Orange Juice", category: "Ichimliklar", price: 12000, currency: "so'm", image: "https://images.unsplash.com/photo-1613478223719-2ab802602423" },
+  { id: 93, title: "Apple Juice", category: "Ichimliklar", price: 12000, currency: "so'm", image: "https://images.unsplash.com/photo-1604908812195-8b2f8c2c9b87" },
+  { id: 94, title: "Lemonade", category: "Ichimliklar", price: 10000, currency: "so'm", image: "https://images.unsplash.com/photo-1528825871115-3581a5387919" },
+  { id: 95, title: "Ice Tea", category: "Ichimliklar", price: 11000, currency: "so'm", image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc" },
+  { id: 96, title: "Energy Drink", category: "Ichimliklar", price: 15000, currency: "so'm", image: "https://images.unsplash.com/photo-1622543925917-763c34c7c8c8" },
+  { id: 97, title: "Smoothie", category: "Ichimliklar", price: 20000, currency: "so'm", image: "https://images.unsplash.com/photo-1553530979-2bfa45b4c0f6" },
+  { id: 98, title: "Hot Chocolate", category: "Ichimliklar", price: 14000, currency: "so'm", image: "https://images.unsplash.com/photo-1517578239113-b03992dcdd25" },
+  { id: 99, title: "Mineral Water", category: "Ichimliklar", price: 5000, currency: "so'm", image: "https://images.unsplash.com/photo-1564419320461-6870880221ad" },
+  { id: 100, title: "Cocktail Mocktail", category: "Ichimliklar", price: 25000, currency: "so'm", image: "https://images.unsplash.com/photo-1551024709-8f23befc6f87" }
+]
+
+let productId = localStorage.getItem("productId");
+let product = foods.find(i => i.id == productId);
+
+document.getElementById("product").innerHTML = `
+  <div class="card">
+
+    <div class="img-box">
+      <img src="${product.image}">
+    </div>
+
+    <div class="info">
+
+      <span class="tag">${product.category}</span>
+
+      <h1 class="title">${product.title}</h1>
+
+      <div class="price">${product.price} so'm</div>
+
+      <p class="desc">
+        Bu mahsulot juda sifatli va mazali. Sizga tavsiya qilamiz.
+      </p>
+
+      <button class="btn back" onclick="history.back()">⬅ Back</button>
+
+        <button class="btn call">
+  <a class="acall" href="tel:+998911750757">📞 Buyurtma Berish</a>
+</button>
+     
+
+    </div>
+
+  </div>
+`;
+
+</script>
+
+</body>
+</html>
