@@ -21,30 +21,7 @@
    </div>
    <div class="container2">
       <div class="nav">
-         <div class="lang-switcher">
-  <button id="langBtn" class="lang-btn">
-    <img id="currentFlag" src="https://flagcdn.com/w40/gb.png" />
-    <span id="currentLang">English</span>
-    <span>▼</span>
-  </button>
-
-  <div id="langMenu" class="lang-menu hidden">
-    <div class="lang-item" data-lang="en">
-      <img src="https://flagcdn.com/w40/gb.png" />
-      <span>English</span>
-    </div>
-
-    <div class="lang-item" data-lang="uz">
-      <img src="https://flagcdn.com/w40/uz.png" />
-      <span>O‘zbekcha</span>
-    </div>
-
-    <div class="lang-item" data-lang="ru">
-      <img src="https://flagcdn.com/w40/ru.png" />
-      <span>Русский</span>
-    </div>
-  </div>
-</div>
+         
          <div class="start">
             <div class="s"> <img
                   src="./logo.jpg"
@@ -53,6 +30,17 @@
             </div>
          </div>
          <div class="burger" onclick="toggleMenu(this)"> <span></span> <span></span> <span></span> </div>
+         <div class="lang-switch">
+  <button onclick="toggleLangMenu()" id="langBtn">
+    🌐 EN
+  </button>
+
+  <div class="lang-menu" id="langMenu">
+    <button onclick="setLang('en')">🇬🇧 English</button>
+    <button onclick="setLang('uz')">🇺🇿 O‘zbekcha</button>
+    <button onclick="setLang('ru')">🇷🇺 Русский</button>
+  </div>
+</div>
          <div class="menu" id="menu2">
             <div class="buttons"> <button onclick="filterFood('All')">Hammasi</button> <button
                   onclick="filterFood('Uzbek Milliy Taom')">Milliy</button> <button
@@ -71,62 +59,6 @@
    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
 
    <script>
-
-const langBtn = document.getElementById("langBtn");
-const langMenu = document.getElementById("langMenu");
-const currentFlag = document.getElementById("currentFlag");
-const currentLang = document.getElementById("currentLang");
-
-const languages = {
-  en: {
-    name: "English",
-    flag: "https://flagcdn.com/w40/gb.png"
-  },
-  uz: {
-    name: "O‘zbekcha",
-    flag: "https://flagcdn.com/w40/uz.png"
-  },
-  ru: {
-    name: "Русский",
-    flag: "https://flagcdn.com/w40/ru.png"
-  }
-};
-
-// open/close menu
-langBtn.addEventListener("click", () => {
-  langMenu.classList.toggle("hidden");
-});
-
-// change language
-document.querySelectorAll(".lang-item").forEach(item => {
-  item.addEventListener("click", () => {
-    const lang = item.getAttribute("data-lang");
-
-    currentLang.textContent = languages[lang].name;
-    currentFlag.src = languages[lang].flag;
-
-    localStorage.setItem("lang", lang);
-    langMenu.classList.add("hidden");
-
-    applyLanguage(lang);
-  });
-});
-
-// simple example text change
-function applyLanguage(lang) {
-  const texts = {
-    en: "Welcome to our menu",
-    uz: "Bizning menyuga xush kelibsiz",
-    ru: "Добро пожаловать в меню"
-  };
-
-  document.getElementById("title").textContent = texts[lang];
-}
-
-// load saved language
-const savedLang = localStorage.getItem("lang") || "en";
-document.querySelector(`[data-lang="${savedLang}"]`).click();
-
 
       const socket = io();
 
@@ -192,7 +124,11 @@ function checkLogin(){
    }
     else { document.getElementById("errorText").innerText = "Login yoki parol xato" 
 
-    } }
+    }
+   
+   document.getElementById("errorText").innerText =
+  translations[lang].loginError;
+}
 
 
 function toggleMenu(x){ x.classList.toggle("active")
@@ -202,6 +138,69 @@ function toggleMenu(x){ x.classList.toggle("active")
   window.location.href = "index.html"
  }
 
+ let lang = localStorage.getItem("lang") || "en";
+
+const translations = {
+  en: {
+    all: "All",
+    national: "National",
+    fast: "Fast Food",
+    salad: "Salads",
+    dessert: "Dessert",
+    drinks: "Drinks",
+    loginError: "Wrong login or password"
+  },
+  uz: {
+    all: "Hammasi",
+    national: "Milliy",
+    fast: "Fast Food",
+    salad: "Salatlar",
+    dessert: "Desert",
+    drinks: "Ichimliklar",
+    loginError: "Login yoki parol xato"
+  },
+  ru: {
+    all: "Все",
+    national: "Национальные",
+    fast: "Фастфуд",
+    salad: "Салаты",
+    dessert: "Десерт",
+    drinks: "Напитки",
+    loginError: "Неверный логин или пароль"
+  }
+};
+function setLang(l) {
+  lang = l;
+  localStorage.setItem("lang", l);
+
+  document.getElementById("langBtn").innerText =
+    l === "en" ? "🌐 EN" : l === "uz" ? "🌐 UZ" : "🌐 RU";
+
+  document.getElementById("langMenu").classList.remove("active");
+
+  updateUI();
+  filterFood("All");
+}
+
+function toggleLangMenu() {
+  document.getElementById("langMenu").classList.toggle("active");
+}
+
+function updateUI() {
+  const t = translations[lang];
+
+  const btns = document.querySelectorAll(".buttons button");
+
+  btns[0].innerText = t.all;
+  btns[1].innerText = t.national;
+  btns[2].innerText = t.fast;
+  btns[3].innerText = t.salad;
+  btns[4].innerText = t.dessert;
+  btns[5].innerText = t.drinks;
+}
+
+
+setLang(lang);
    </script>
 
 </body>
