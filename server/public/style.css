@@ -45,6 +45,9 @@ body{
   height:55px;
   border-radius:50%;
 }
+.s h1{
+  color: #19710ad0;
+}
 
 .burger{
   font-size:28px;
