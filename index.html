@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Menu</title>
+   <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+   <div class="container2">
+      <div class="nav">
+         <div class="start">
+            <div class="s"> <img
+                  src="./pngtree-coffee-logo-design-icon-a-cup-of-hot-for-shop-vector-png-image_16468950.png"
+                  onclick="openLockScreen()">
+               <h1>GALATA</h1>
+            </div>
+         </div>
+         <div class="burger" onclick="toggleMenu(this)"> <span></span> <span></span> <span></span> </div>
+         <div class="menu" id="menu2">
+            <div class="buttons"> <button onclick="filterFood('All')">Hammasi</button> <button
+                  onclick="filterFood('Uzbek Milliy Taom')">Milliy</button> <button
+                  onclick="filterFood('FastFood')">Fast Food</button> <button
+                  onclick="filterFood('Salatlar')">Salatlar</button> <button
+                  onclick="filterFood('Desert')">Desert</button> <button
+                  onclick="filterFood('Ichimliklar')">Ichimliklar</button> </div>
+         </div>
+      </div>
+      <div class="container">
+         <div class="taomlar" id="menu"></div>
+      </div>
+   </div>
+
+   <div class="container">
+
+      <div class="menu" id="menu"></div>
+
+   </div>
+
+   <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+
+   <script>
+
+      const socket = io();
+
+      let allFoods = [];
+      let viewFoods = [];
+
+      socket.on("update-foods", (data) => {
+
+         allFoods = data;
+
+         filterFood("All");
+
+      });
+
+      function filterFood(category) {
+
+         if (category === "All") {
+            viewFoods = allFoods;
+         } else {
+            viewFoods = allFoods.filter(f => f.category === category);
+         }
+
+         render();
+
+      }
+
+      function render() {
+
+         const menu = document.getElementById("menu");
+
+         menu.innerHTML = "";
+
+         viewFoods.forEach(item => {
+
+            menu.innerHTML += `
+    <div class="card">
+   <img class="ti" src="${item.image}">
+    <div class="det"> 
+      <p class="p">${item.category}</p>
+       <h1>${item.title}</h1> <p class="som">${item.price} so'm</p> 
+             <p class="p2">${item.bat} <br></p>
+
+       </div> 
+       </div>
+`;
+
+         });
+
+      }
+
+   </script>
+
+</body>
+
+</html>
