@@ -30,7 +30,10 @@
             </div>
          </div>
          <div class="burger" onclick="toggleMenu(this)"> <span></span> <span></span> <span></span> </div>
-      
+      <div class="lang-switch">
+  <button onclick="setLang('uz')">UZ</button>
+  <button onclick="setLang('ru')">RU</button>
+</div>
          <div class="menu" id="menu2">
             <div class="buttons"> <button onclick="filterFood('All')">Hammasi</button> <button
                   onclick="filterFood('Taom')">Taomlar</button> <button
@@ -44,7 +47,11 @@
          <div class="taomlar" id="menu"></div>
       </div>
    </div>
-   
+   git add .
+
+git commit -m "update"
+
+git push origin main
 
    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
 
@@ -191,6 +198,8 @@ function updateUI() {
 
 
 setLang(lang);
+
+
    </script>
 
 </body>

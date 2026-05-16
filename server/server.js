@@ -50,7 +50,7 @@ const upload = multer({
   }
 });
 
-// ================= DATA =================
+
 let foods = [];
 
 // LOAD DATA
@@ -73,7 +73,7 @@ if (foods.length === 0) {
       price: 18000,
       bat: "Mazali burger",
       image:
-        "https://images.unsplash.com/photo-1568901346375-23c9450c58cd"
+        "picture/photo_1_2026-05-16_13-52-40.jpg"
     },
 
     {
