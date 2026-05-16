@@ -68,22 +68,346 @@ if (foods.length === 0) {
   foods = [
     {
       id: 1,
-      title: "Burger",
-      category: "FastFood",
-      price: 18000,
-      bat: "Mazali burger",
+      title: "Evro Medovik Shokolad",
+      category: "Shirinliklar",
+      price: 24000,
+      bat: "Shocolad",
       image:
         "picture/photo_1_2026-05-16_13-52-40.jpg"
     },
 
     {
       id: 2,
-      title: "Pizza",
-      category: "FastFood",
-      price: 45000,
-      bat: "Issiq pizza",
-      image:
-        "https://images.unsplash.com/photo-1513104890138-7c749659a591"
+      title: "Evro Medovik Karamel",
+      category: "Shirinliklar",
+      price: 24000,
+      bat: "Karamel",
+      image:"photo_2_2026-05-16_13-52-40.jpg"
+        
+    },
+    {
+      id: 3,
+      title: "Evro Medovik Malina",
+      category: "Shirinliklar",
+      price: 24000,
+      bat: "Malina",
+      image:"photo_3_2026-05-16_13-52-40.jpg"
+        
+    },
+    {
+      id: 4,
+      title: "Evro Medovik Limon",
+      category: "Shirinliklar",
+      price: 24000,
+      bat: "Limon",
+      image:"photo_4_2026-05-16_13-52-40.jpg"
+        
+    },
+    {
+      id: 5,
+      title: "Evro Medovik Shokolad & Malina",
+      category: "Shirinliklar",
+      price: 24000,
+      bat: "Shokolad & Malina",
+      image:"photo_5_2026-05-16_13-52-40.jpg"
+        
+    },
+    {
+      id: 6,
+      title: "Tartaletka  ",
+      category: "Shirinliklar",
+      price: 20000,
+      bat: "Tartaletka",
+      image:"photo_6_2026-05-16_13-52-40.jpg"
+        
+    },
+    {
+      id: 7,
+      title: "Konfig",
+      category: "Shirinliklar",
+      price: 25000,
+      bat: "Malinoviy Konfig",
+      image:"photo_7_2026-05-16_13-52-40.jpg"
+        
+    },
+    {
+      id: 8,
+      title: "Shutsert",
+      category: "Shirinliklar",
+      price: 20000,
+      bat: "Malinoviy Nachinka",
+      image:"photo_8_2026-05-16_13-52-40.jpg"
+        
+    },
+    {
+      id: 9,
+      title: "Tartaletka",
+      category: "Shirinliklar",
+      price: 16000,
+      bat: "Cheescream",
+      image:"photo_9_2026-05-16_13-52-40.jpg"
+        
+    },
+    {
+      id: 10,
+      title: "Tartaletka",
+      category: "Shirinliklar",
+      price: 20000,
+      bat: "Shokolad",
+      image:"photo_10_2026-05-16_13-52-40.jpg"
+        
+    },
+    {
+      id: 11,
+      title: "Tartaletka",
+      category: "Shirinliklar",
+      price: 16000,
+      bat: "Shokolad",
+      image:"photo_11_2026-05-16_13-52-40.jpg"
+        
+    },
+    {
+      id: 12,
+      title: "Cheesse cake",
+      category: "Shirinliklar",
+      price: 40000,
+      bat: "Malina",
+      image:"photo_12_2026-05-16_13-52-40.jpg"
+        
+    },
+    {
+      id: 13,
+      title: "Musuviy Cheesse cake",
+      category: "Shirinliklar",
+      price: 40000,
+      bat: "Bilgiyskiy shocolad",
+      image:"photo_13_2026-05-16_13-52-40.jpg"
+        
+    },
+    {
+      id: 14,
+      title: "",
+      category: "Shirinliklar",
+      price: 1,
+      bat: "",
+      image:"photo_14_2026-05-16_13-52-40.jpg"
+        
+    },
+    {
+      id: 15,
+      title: "",
+      category: "Shirinliklar",
+      price: 1,
+      bat: "",
+      image:"photo_15_2026-05-16_13-52-40.jpg"
+        
+    },
+    {
+      id: 16,
+      title: "",
+      category: "Shirinliklar",
+      price: 1,
+      bat: "",
+      image:"photo_16_2026-05-16_13-52-40.jpg"
+        
+    },
+    {
+      id: 17,
+      title: "",
+      category: "Shirinliklar",
+      price: 1,
+      bat: "",
+      image:"photo_17_2026-05-16_13-52-40.jpg"
+        
+    },
+    {
+      id: 18,
+      title: "",
+      category: "Shirinliklar",
+      price: 1,
+      bat: "",
+      image:"photo_18_2026-05-16_13-52-40.jpg"
+        
+    },
+    {
+      id: 19,
+      title: "",
+      category: "Shirinliklar",
+      price: 1,
+      bat: "",
+      image:"photo_19_2026-05-16_13-52-40.jpg"
+        
+    },
+    {
+      id: 20,
+      title: "",
+      category: "Shirinliklar",
+      price: 1,
+      bat: "",
+      image:"photo_20_2026-05-16_13-52-40.jpg"
+        
+    },
+    {
+      id: 21,
+      title: "",
+      category: "Shirinliklar",
+      price: 1,
+      bat: "",
+      image:"photo_21_2026-05-16_13-52-40.jpg"
+        
+    },
+    {
+      id: 22,
+      title: "",
+      category: "Shirinliklar",
+      price: 1,
+      bat: "",
+      image:"photo_22_2026-05-16_13-52-40.jpg"
+        
+    },
+    {
+      id: 23,
+      title: "",
+      category: "Shirinliklar",
+      price: 1,
+      bat: "",
+      image:"photo_23_2026-05-16_13-52-40.jpg"
+        
+    },
+    {
+      id: 24,
+      title: "",
+      category: "Shirinliklar",
+      price: 1,
+      bat: "",
+      image:"photo_24_2026-05-16_13-52-40.jpg"
+        
+    },
+    {
+      id: 25,
+      title: "",
+      category: "Shirinliklar",
+      price: 1,
+      bat: "",
+      image:"photo_25_2026-05-16_13-52-40.jpg"
+        
+    },
+    {
+      id: 26,
+      title: "",
+      category: "Shirinliklar",
+      price: 1,
+      bat: "",
+      image:"photo_26_2026-05-16_13-52-40.jpg"
+        
+    },
+    {
+      id: 27,
+      title: "",
+      category: "Shirinliklar",
+      price: 1,
+      bat: "",
+      image:"photo_27_2026-05-16_13-52-40.jpg"
+        
+    },
+    {
+      id: 28,
+      title: "",
+      category: "Shirinliklar",
+      price: 1,
+      bat: "",
+      image:"photo_28_2026-05-16_13-52-40.jpg"
+        
+    },
+    {
+      id: 29,
+      title: "",
+      category: "Shirinliklar",
+      price: 1,
+      bat: "",
+      image:"photo_29_2026-05-16_13-52-40.jpg"
+        
+    },
+    {
+      id: 30,
+      title: "",
+      category: "Shirinliklar",
+      price: 1,
+      bat: "",
+      image:"photo_30_2026-05-16_13-52-40.jpg"
+        
+    },
+    {
+      id: 31,
+      title: "",
+      category: "Shirinliklar",
+      price: 1,
+      bat: "",
+      image:"photo_31_2026-05-16_13-52-40.jpg"
+        
+    },
+    {
+      id: 32,
+      title: "",
+      category: "Shirinliklar",
+      price: 1,
+      bat: "",
+      image:"photo_32_2026-05-16_13-52-40.jpg"
+        
+    },
+    {
+      id: 33,
+      title: "",
+      category: "Shirinliklar",
+      price: 1,
+      bat: "",
+      image:"photo_33_2026-05-16_13-52-40.jpg"
+        
+    },
+    {
+      id: 34,
+      title: "",
+      category: "Shirinliklar",
+      price: 1,
+      bat: "",
+      image:"photo_34_2026-05-16_13-52-40.jpg"
+        
+    },
+    {
+      id: 35,
+      title: "",
+      category: "Shirinliklar",
+      price: 1,
+      bat: "",
+      image:"photo_35_2026-05-16_13-52-40.jpg"
+        
+    },
+    {
+      id: 36,
+      title: "",
+      category: "Shirinliklar",
+      price: 1,
+      bat: "",
+      image:"photo_36_2026-05-16_13-52-40.jpg"
+        
+    },
+    {
+      id: 37,
+      title: "",
+      category: "Shirinliklar",
+      price: 1,
+      bat: "",
+      image:"photo_37_2026-05-16_13-52-40.jpg"
+        
+    },
+    {
+      id: 38,
+      title: "",
+      category: "Shirinliklar",
+      price: 1,
+      bat: "",
+      image:"photo_38_2026-05-16_13-52-40.jpg"
+        
     },
     {
        id: 1, title: "Pepsi 450ml",
