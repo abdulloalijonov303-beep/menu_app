@@ -408,6 +408,114 @@ if (foods.length === 0) {
       image: "picture/photo_38_2026-05-16_13-52-40.jpg"
 
     },
+        {
+      id: 1,
+      title: "Evro Medovik Shokolad",
+      category: "Shirinliklar",
+      price: 24000,
+      bat: "Shocolad",
+      image: "picture/photo_1_2026-05-16_13-59-08.jpg"
+    },
+
+    {
+      id: 2,
+      title: "Evro Medovik Karamel",
+      category: "Shirinliklar",
+      price: 24000,
+      bat: "Karamel",
+      image: "picture/photo_2_2026-05-16_13-59-08.jpg"
+
+    },
+    {
+      id: 3,
+      title: "Evro Medovik Malina",
+      category: "Shirinliklar",
+      price: 24000,
+      bat: "Malina",
+      image: "picture/photo_3_2026-05-16_13-59-08.jpg"
+
+    },
+    {
+      id: 4,
+      title: "Evro Medovik Limon",
+      category: "Shirinliklar",
+      price: 24000,
+      bat: "Limon",
+      image: "picture/photo_4_2026-05-16_13-59-08.jpg"
+
+    },
+    {
+      id: 5,
+      title: "Evro Medovik Shokolad & Malina",
+      category: "Shirinliklar",
+      price: 24000,
+      bat: "Shokolad & Malina",
+      image: "picture/photo_5_2026-05-16_13-59-08.jpg"
+
+    },
+    {
+      id: 6,
+      title: "Tartaletka  ",
+      category: "Shirinliklar",
+      price: 20000,
+      bat: "Tartaletka",
+      image: "picture/photo_6_2026-05-16_13-59-08.jpg"
+
+    },
+    {
+      id: 7,
+      title: "Konfig",
+      category: "Shirinliklar",
+      price: 25000,
+      bat: "Malinoviy Konfig",
+      image: "picture/photo_7_2026-05-16_13-59-08.jpg"
+
+    },
+    {
+      id: 8,
+      title: "Shutsert",
+      category: "Shirinliklar",
+      price: 20000,
+      bat: "Malinoviy Nachinka",
+      image: "picture/photo_8_2026-05-16_13-59-08.jpg"
+
+    },
+    {
+      id: 9,
+      title: "Tartaletka",
+      category: "Shirinliklar",
+      price: 16000,
+      bat: "Cheescream",
+      image: "picture/photo_9_2026-05-16_13-59-08.jpg"
+
+    },
+    {
+      id: 10,
+      title: "Tartaletka",
+      category: "Shirinliklar",
+      price: 20000,
+      bat: "Shokolad",
+      image: "picture/photo_10_2026-05-16_13-59-08.jpg"
+
+    },
+    {
+      id: 11,
+      title: "Tartaletka",
+      category: "Shirinliklar",
+      price: 16000,
+      bat: "Shokolad",
+      image: "picture/photo_11_2026-05-16_13-59-08.jpg"
+
+    },
+    {
+      id: 12,
+      title: "Cheesse cake",
+      category: "Shirinliklar",
+      price: 40000,
+      bat: "Malina",
+      image: "picture/photo_12_2026-05-16_13-59-08.jpg"
+
+    },
     {
       id: 1, title: "Pepsi",
       category: "Ichimliklar",
