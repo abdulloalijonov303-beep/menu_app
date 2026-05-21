@@ -489,7 +489,7 @@ if (foods.length === 0) {
     },
     {
       id: 6,
-      title: "MOxito Kulpnoy  ",
+      title: "Moxito Kulpnoy  ",
       category: "Ichimliklar",
       price: 25000,
       bat: "Tartaletka",
@@ -562,7 +562,7 @@ if (foods.length === 0) {
           category: "Coftea",
           price: 23000,
           bat: "Coffee",
-          image: "picture/Americano.jpg.jpg",
+          image: "picture/Americano.jpg",
         },
 
         {
@@ -580,7 +580,7 @@ if (foods.length === 0) {
           category: "Coftea",
           price: 25000,
           bat: "Latte coffee",
-          image: "server/public/picture/latte.jpg",
+          image: "picture/latte.jpg",
         },
         
         {
@@ -589,7 +589,7 @@ if (foods.length === 0) {
           category: "Coftea",
           price: 30000,
           bat: "Latte coffee",
-          image: "server/public/picture/latte ice.png",
+          image: "picture/latte ice.png",
         },
         
         {
@@ -598,7 +598,7 @@ if (foods.length === 0) {
           category: "Coftea",
           price: 25000,
           bat: "Coffee",
-          image: "server/public/picture/cappucino.jpg",
+          image: "picture/cappucino.jpg",
         },
         
         {
@@ -607,7 +607,7 @@ if (foods.length === 0) {
           category: "Coftea",
           price: 30000,
           bat: "Coffee Ice",
-          image: "server/public/picture/cappucino ice.jpg",
+          image: "picture/cappucino ice.jpg",
         },
         
         {
@@ -616,7 +616,7 @@ if (foods.length === 0) {
           category: "Coftea",
           price: 30000,
           bat: "Coffee late",
-          image: "server/public/picture/spanish latte.jpg",
+          image: "picture/spanish latte.jpg",
         },
         
         {
@@ -625,7 +625,7 @@ if (foods.length === 0) {
           category: "Coftea",
           price: 35000,
           bat: "Coffee",
-          image: "server/public/picture/flat white.jfif",
+          image: "picture/flat white.jfif",
         },
         
         {
@@ -634,7 +634,7 @@ if (foods.length === 0) {
           category: "Coftea",
           price: 25000,
           bat: "Choy",
-          image: "server/public/picture/mango marakuya.jpg",
+          image: "picture/mango marakuya.jpg",
         },
         
 
@@ -644,7 +644,7 @@ if (foods.length === 0) {
           category: "Coftea",
           price: 25000,
           bat: "Choy",
-          image: "server/public/picture/banan apelsin.jpg",
+          image: "picture/banan apelsin.jpg",
         },
         
         
@@ -655,7 +655,7 @@ if (foods.length === 0) {
           category: "Coftea",
           price: 30000,
           bat: "Choy",
-          image: "server/public/picture/tinchlantiruvchi.jpg",
+          image: "picture/tinchlantiruvchi.jpg",
         },
         
        
@@ -665,7 +665,7 @@ if (foods.length === 0) {
           category: "Coftea",
           price: 35000,
           bat: "Choy",
-          image: "server/public/picture/bardak.jpg",
+          image: "picture/bardak.jpg",
         },
    
     {
