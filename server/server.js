@@ -72,7 +72,7 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 45000,
       bat: "Belgiyskiy Shokolad",
-      image: "picture/photo_22_2026-05-16_13-52-40.jpg"
+      image: "picture/photo_2026-05-21_16-38-35.jpg"
 
     },
     {
