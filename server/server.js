@@ -72,8 +72,7 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 24000,
       bat: "Shocolad",
-      image:
-        "picture/photo_1_2026-05-16_13-52-40.jpg"
+      image: "picture/photo_1_2026-05-16_13-52-40.jpg"
     },
 
     {
@@ -82,7 +81,7 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 24000,
       bat: "Karamel",
-      image: "photo_2_2026-05-16_13-52-40.jpg"
+      image: "picture/photo_2_2026-05-16_13-52-40.jpg"
 
     },
     {
@@ -91,7 +90,7 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 24000,
       bat: "Malina",
-      image: "photo_3_2026-05-16_13-52-40.jpg"
+      image: "picture/photo_3_2026-05-16_13-52-40.jpg"
 
     },
     {
@@ -100,7 +99,7 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 24000,
       bat: "Limon",
-      image: "photo_4_2026-05-16_13-52-40.jpg"
+      image: "picture/photo_4_2026-05-16_13-52-40.jpg"
 
     },
     {
@@ -109,7 +108,7 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 24000,
       bat: "Shokolad & Malina",
-      image: "photo_5_2026-05-16_13-52-40.jpg"
+      image: "picture/photo_5_2026-05-16_13-52-40.jpg"
 
     },
     {
@@ -118,7 +117,7 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 20000,
       bat: "Tartaletka",
-      image: "photo_6_2026-05-16_13-52-40.jpg"
+      image: "picture/photo_6_2026-05-16_13-52-40.jpg"
 
     },
     {
@@ -127,7 +126,7 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 25000,
       bat: "Malinoviy Konfig",
-      image: "photo_7_2026-05-16_13-52-40.jpg"
+      image: "picture/photo_7_2026-05-16_13-52-40.jpg"
 
     },
     {
@@ -136,7 +135,7 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 20000,
       bat: "Malinoviy Nachinka",
-      image: "photo_8_2026-05-16_13-52-40.jpg"
+      image: "picture/photo_8_2026-05-16_13-52-40.jpg"
 
     },
     {
@@ -145,7 +144,7 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 16000,
       bat: "Cheescream",
-      image: "photo_9_2026-05-16_13-52-40.jpg"
+      image: "picture/photo_9_2026-05-16_13-52-40.jpg"
 
     },
     {
@@ -154,7 +153,7 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 20000,
       bat: "Shokolad",
-      image: "photo_10_2026-05-16_13-52-40.jpg"
+      image: "picture/photo_10_2026-05-16_13-52-40.jpg"
 
     },
     {
@@ -163,7 +162,7 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 16000,
       bat: "Shokolad",
-      image: "photo_11_2026-05-16_13-52-40.jpg"
+      image: "picture/photo_11_2026-05-16_13-52-40.jpg"
 
     },
     {
@@ -181,7 +180,7 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 40000,
       bat: "Bilgiyskiy shocolad",
-      image: "photo_13_2026-05-16_13-52-40.jpg"
+      image: "picture/photo_13_2026-05-16_13-52-40.jpg"
 
     },
     {
@@ -190,7 +189,7 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image: "photo_14_2026-05-16_13-52-40.jpg"
+      image: "picture/photo_14_2026-05-16_13-52-40.jpg"
 
     },
     {
@@ -199,7 +198,7 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image: "photo_15_2026-05-16_13-52-40.jpg"
+      image: "picture/photo_15_2026-05-16_13-52-40.jpg"
 
     },
     {
@@ -208,7 +207,7 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image: "photo_16_2026-05-16_13-52-40.jpg"
+      image: "picture/photo_16_2026-05-16_13-52-40.jpg"
 
     },
     {
@@ -217,7 +216,7 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image: "photo_17_2026-05-16_13-52-40.jpg"
+      image: "picture/photo_17_2026-05-16_13-52-40.jpg"
 
     },
     {
@@ -226,7 +225,7 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image: "photo_18_2026-05-16_13-52-40.jpg"
+      image: "picture/photo_18_2026-05-16_13-52-40.jpg"
 
     },
     {
@@ -235,7 +234,7 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image: "photo_19_2026-05-16_13-52-40.jpg"
+      image: "picture/photo_19_2026-05-16_13-52-40.jpg"
 
     },
     {
@@ -244,7 +243,7 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image: "photo_20_2026-05-16_13-52-40.jpg"
+      image: "picture/photo_20_2026-05-16_13-52-40.jpg"
 
     },
     {
@@ -253,7 +252,7 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image: "photo_21_2026-05-16_13-52-40.jpg"
+      image: "picture/photo_21_2026-05-16_13-52-40.jpg"
 
     },
     {
@@ -262,7 +261,7 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image: "photo_22_2026-05-16_13-52-40.jpg"
+      image: "picture/photo_22_2026-05-16_13-52-40.jpg"
 
     },
     {
@@ -271,7 +270,7 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image: "photo_23_2026-05-16_13-52-40.jpg"
+      image: "picture/photo_23_2026-05-16_13-52-40.jpg"
 
     },
     {
@@ -280,7 +279,7 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image: "photo_24_2026-05-16_13-52-40.jpg"
+      image: "picture/photo_24_2026-05-16_13-52-40.jpg"
 
     },
     {
@@ -289,7 +288,7 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image: "photo_25_2026-05-16_13-52-40.jpg"
+      image: "picture/photo_25_2026-05-16_13-52-40.jpg"
 
     },
     {
@@ -298,7 +297,7 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image: "photo_26_2026-05-16_13-52-40.jpg"
+      image: "picture/photo_26_2026-05-16_13-52-40.jpg"
 
     },
     {
@@ -307,7 +306,7 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image: "photo_27_2026-05-16_13-52-40.jpg"
+      image: "picture/photo_27_2026-05-16_13-52-40.jpg"
 
     },
     {
@@ -316,7 +315,7 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image: "photo_28_2026-05-16_13-52-40.jpg"
+      image: "picture/photo_28_2026-05-16_13-52-40.jpg"
 
     },
     {
@@ -325,7 +324,7 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image: "photo_29_2026-05-16_13-52-40.jpg"
+      image: "picture/photo_29_2026-05-16_13-52-40.jpg"
 
     },
     {
@@ -334,7 +333,7 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image: "photo_30_2026-05-16_13-52-40.jpg"
+      image: "picture/photo_30_2026-05-16_13-52-40.jpg"
 
     },
     {
@@ -343,7 +342,7 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image: "photo_31_2026-05-16_13-52-40.jpg"
+      image: "picture/photo_31_2026-05-16_13-52-40.jpg"
 
     },
     {
@@ -352,7 +351,7 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image: "photo_32_2026-05-16_13-52-40.jpg"
+      image: "picture/photo_32_2026-05-16_13-52-40.jpg"
 
     },
     {
@@ -361,7 +360,7 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image: "photo_33_2026-05-16_13-52-40.jpg"
+      image: "picture/photo_33_2026-05-16_13-52-40.jpg"
 
     },
     {
@@ -370,7 +369,7 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image: "photo_34_2026-05-16_13-52-40.jpg"
+      image: "picture/photo_34_2026-05-16_13-52-40.jpg"
 
     },
     {
@@ -379,7 +378,7 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image: "photo_35_2026-05-16_13-52-40.jpg"
+      image: "picture/photo_35_2026-05-16_13-52-40.jpg"
 
     },
     {
@@ -388,7 +387,7 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image: "photo_36_2026-05-16_13-52-40.jpg"
+      image: "picture/photo_36_2026-05-16_13-52-40.jpg"
 
     },
     {
@@ -397,7 +396,7 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image: "photo_37_2026-05-16_13-52-40.jpg"
+      image: "picture/photo_37_2026-05-16_13-52-40.jpg"
 
     },
     {
@@ -406,7 +405,7 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image: "photo_38_2026-05-16_13-52-40.jpg"
+      image: "picture/photo_38_2026-05-16_13-52-40.jpg"
 
     },
     {
