@@ -416,7 +416,7 @@ if (foods.length === 0) {
 
         {
       id: 1,
-      title: "Milksheyk",
+      title: "Milkshake",
       category: "Ichimliklar",
       price: 28000,
       bat: "Snikersli",
@@ -425,7 +425,7 @@ if (foods.length === 0) {
 
     {
       id: 2,
-      title: "Milksheyk",
+      title: "Milkshake",
       category: "Ichimliklar",
       price: 28000,
       bat: "Kulpnoy",
@@ -435,7 +435,7 @@ if (foods.length === 0) {
  
     {
       id: 11,
-      title: "Milksheyk",
+      title: "Milkshake",
       category: "Ichimliklar",
       price: 28000,
       bat: "Banan",
@@ -444,7 +444,7 @@ if (foods.length === 0) {
     },
     {
       id: 13,
-      title: "Milksheyk",
+      title: "Milkshake",
       category: "Ichimliklar",
       price: 35000,
       bat: "Oreo",
@@ -453,7 +453,7 @@ if (foods.length === 0) {
     },
     {
       id: 12,
-      title: "Milksheyk",
+      title: "Milkshake",
       category: "Ichimliklar",
       price: 28000,
       bat: "Bounty",
@@ -462,7 +462,7 @@ if (foods.length === 0) {
     },
     {
       id: 14,
-      title: "Milksheyk",
+      title: "Milkshake",
       category: "Ichimliklar",
       price: 28000,
       bat: "Malina",
@@ -526,7 +526,7 @@ if (foods.length === 0) {
      {
           id: 11,
           title: "Aloe & Qulpnoy",
-          category: "Coftea",
+          category: "Ichimliklar",
           price: 35000,
           bat: "Bubble tea",
           image: "server/public/picture/aloe kulpinay bubble tea.jpg",
@@ -534,7 +534,7 @@ if (foods.length === 0) {
         {
           id: 11,
           title: "Uzum & Tarvuz",
-          category: "Coftea",
+          category: "Ichimliklar",
           price: 35000,
           bat: "Bubble tea",
           image: "server/public/picture/uzum tarvuz bubble tea.jpg",
@@ -542,7 +542,7 @@ if (foods.length === 0) {
         {
           id: 11,
           title: "Chernika",
-          category: "Coftea",
+          category: "Ichimliklar",
           price: 35000,
           bat: "Bubble tea",
           image: "server/public/picture/chernika bubble tea.jpg",
