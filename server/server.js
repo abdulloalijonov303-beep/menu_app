@@ -82,8 +82,8 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 24000,
       bat: "Karamel",
-      image:"photo_2_2026-05-16_13-52-40.jpg"
-        
+      image: "photo_2_2026-05-16_13-52-40.jpg"
+
     },
     {
       id: 3,
@@ -91,8 +91,8 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 24000,
       bat: "Malina",
-      image:"photo_3_2026-05-16_13-52-40.jpg"
-        
+      image: "photo_3_2026-05-16_13-52-40.jpg"
+
     },
     {
       id: 4,
@@ -100,8 +100,8 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 24000,
       bat: "Limon",
-      image:"photo_4_2026-05-16_13-52-40.jpg"
-        
+      image: "photo_4_2026-05-16_13-52-40.jpg"
+
     },
     {
       id: 5,
@@ -109,8 +109,8 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 24000,
       bat: "Shokolad & Malina",
-      image:"photo_5_2026-05-16_13-52-40.jpg"
-        
+      image: "photo_5_2026-05-16_13-52-40.jpg"
+
     },
     {
       id: 6,
@@ -118,8 +118,8 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 20000,
       bat: "Tartaletka",
-      image:"photo_6_2026-05-16_13-52-40.jpg"
-        
+      image: "photo_6_2026-05-16_13-52-40.jpg"
+
     },
     {
       id: 7,
@@ -127,8 +127,8 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 25000,
       bat: "Malinoviy Konfig",
-      image:"photo_7_2026-05-16_13-52-40.jpg"
-        
+      image: "photo_7_2026-05-16_13-52-40.jpg"
+
     },
     {
       id: 8,
@@ -136,8 +136,8 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 20000,
       bat: "Malinoviy Nachinka",
-      image:"photo_8_2026-05-16_13-52-40.jpg"
-        
+      image: "photo_8_2026-05-16_13-52-40.jpg"
+
     },
     {
       id: 9,
@@ -145,8 +145,8 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 16000,
       bat: "Cheescream",
-      image:"photo_9_2026-05-16_13-52-40.jpg"
-        
+      image: "photo_9_2026-05-16_13-52-40.jpg"
+
     },
     {
       id: 10,
@@ -154,8 +154,8 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 20000,
       bat: "Shokolad",
-      image:"photo_10_2026-05-16_13-52-40.jpg"
-        
+      image: "photo_10_2026-05-16_13-52-40.jpg"
+
     },
     {
       id: 11,
@@ -163,8 +163,8 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 16000,
       bat: "Shokolad",
-      image:"photo_11_2026-05-16_13-52-40.jpg"
-        
+      image: "photo_11_2026-05-16_13-52-40.jpg"
+
     },
     {
       id: 12,
@@ -172,8 +172,8 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 40000,
       bat: "Malina",
-      image:"photo_12_2026-05-16_13-52-40.jpg"
-        
+      image: "photo_12_2026-05-16_13-52-40.jpg"
+
     },
     {
       id: 13,
@@ -181,8 +181,8 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 40000,
       bat: "Bilgiyskiy shocolad",
-      image:"photo_13_2026-05-16_13-52-40.jpg"
-        
+      image: "photo_13_2026-05-16_13-52-40.jpg"
+
     },
     {
       id: 14,
@@ -190,8 +190,8 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image:"photo_14_2026-05-16_13-52-40.jpg"
-        
+      image: "photo_14_2026-05-16_13-52-40.jpg"
+
     },
     {
       id: 15,
@@ -199,8 +199,8 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image:"photo_15_2026-05-16_13-52-40.jpg"
-        
+      image: "photo_15_2026-05-16_13-52-40.jpg"
+
     },
     {
       id: 16,
@@ -208,8 +208,8 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image:"photo_16_2026-05-16_13-52-40.jpg"
-        
+      image: "photo_16_2026-05-16_13-52-40.jpg"
+
     },
     {
       id: 17,
@@ -217,8 +217,8 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image:"photo_17_2026-05-16_13-52-40.jpg"
-        
+      image: "photo_17_2026-05-16_13-52-40.jpg"
+
     },
     {
       id: 18,
@@ -226,8 +226,8 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image:"photo_18_2026-05-16_13-52-40.jpg"
-        
+      image: "photo_18_2026-05-16_13-52-40.jpg"
+
     },
     {
       id: 19,
@@ -235,8 +235,8 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image:"photo_19_2026-05-16_13-52-40.jpg"
-        
+      image: "photo_19_2026-05-16_13-52-40.jpg"
+
     },
     {
       id: 20,
@@ -244,8 +244,8 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image:"photo_20_2026-05-16_13-52-40.jpg"
-        
+      image: "photo_20_2026-05-16_13-52-40.jpg"
+
     },
     {
       id: 21,
@@ -253,8 +253,8 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image:"photo_21_2026-05-16_13-52-40.jpg"
-        
+      image: "photo_21_2026-05-16_13-52-40.jpg"
+
     },
     {
       id: 22,
@@ -262,8 +262,8 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image:"photo_22_2026-05-16_13-52-40.jpg"
-        
+      image: "photo_22_2026-05-16_13-52-40.jpg"
+
     },
     {
       id: 23,
@@ -271,8 +271,8 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image:"photo_23_2026-05-16_13-52-40.jpg"
-        
+      image: "photo_23_2026-05-16_13-52-40.jpg"
+
     },
     {
       id: 24,
@@ -280,8 +280,8 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image:"photo_24_2026-05-16_13-52-40.jpg"
-        
+      image: "photo_24_2026-05-16_13-52-40.jpg"
+
     },
     {
       id: 25,
@@ -289,8 +289,8 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image:"photo_25_2026-05-16_13-52-40.jpg"
-        
+      image: "photo_25_2026-05-16_13-52-40.jpg"
+
     },
     {
       id: 26,
@@ -298,8 +298,8 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image:"photo_26_2026-05-16_13-52-40.jpg"
-        
+      image: "photo_26_2026-05-16_13-52-40.jpg"
+
     },
     {
       id: 27,
@@ -307,8 +307,8 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image:"photo_27_2026-05-16_13-52-40.jpg"
-        
+      image: "photo_27_2026-05-16_13-52-40.jpg"
+
     },
     {
       id: 28,
@@ -316,8 +316,8 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image:"photo_28_2026-05-16_13-52-40.jpg"
-        
+      image: "photo_28_2026-05-16_13-52-40.jpg"
+
     },
     {
       id: 29,
@@ -325,8 +325,8 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image:"photo_29_2026-05-16_13-52-40.jpg"
-        
+      image: "photo_29_2026-05-16_13-52-40.jpg"
+
     },
     {
       id: 30,
@@ -334,8 +334,8 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image:"photo_30_2026-05-16_13-52-40.jpg"
-        
+      image: "photo_30_2026-05-16_13-52-40.jpg"
+
     },
     {
       id: 31,
@@ -343,8 +343,8 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image:"photo_31_2026-05-16_13-52-40.jpg"
-        
+      image: "photo_31_2026-05-16_13-52-40.jpg"
+
     },
     {
       id: 32,
@@ -352,8 +352,8 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image:"photo_32_2026-05-16_13-52-40.jpg"
-        
+      image: "photo_32_2026-05-16_13-52-40.jpg"
+
     },
     {
       id: 33,
@@ -361,8 +361,8 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image:"photo_33_2026-05-16_13-52-40.jpg"
-        
+      image: "photo_33_2026-05-16_13-52-40.jpg"
+
     },
     {
       id: 34,
@@ -370,8 +370,8 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image:"photo_34_2026-05-16_13-52-40.jpg"
-        
+      image: "photo_34_2026-05-16_13-52-40.jpg"
+
     },
     {
       id: 35,
@@ -379,8 +379,8 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image:"photo_35_2026-05-16_13-52-40.jpg"
-        
+      image: "photo_35_2026-05-16_13-52-40.jpg"
+
     },
     {
       id: 36,
@@ -388,8 +388,8 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image:"photo_36_2026-05-16_13-52-40.jpg"
-        
+      image: "photo_36_2026-05-16_13-52-40.jpg"
+
     },
     {
       id: 37,
@@ -397,8 +397,8 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image:"photo_37_2026-05-16_13-52-40.jpg"
-        
+      image: "photo_37_2026-05-16_13-52-40.jpg"
+
     },
     {
       id: 38,
@@ -406,20 +406,89 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 1,
       bat: "",
-      image:"photo_38_2026-05-16_13-52-40.jpg"
-        
+      image: "photo_38_2026-05-16_13-52-40.jpg"
+
     },
-   { id: 1, title: "Pepsi 450ml", category: "Ichimliklar", price: 12000, currency: "so'm", image: "picture/pepsi 450.jpg" },
-{ id: 2, title: "Pepsi 250ml", category: "Ichimliklar", price: 10000, currency: "so'm", image: "picture/pepsi 0.25.jpg" },
-{ id: 3, title: "Fanta 250ml", category: "Ichimliklar", price: 10000, currency: "so'm", image: "picture/fanta 250.jpg" },
-{ id: 4, title: "Adrenaline 250ml", category: "Ichimliklar", price: 12000, currency: "so'm", image: "picture/adreline .jpg"},
-{ id: 5, title: "Blance Blue Gazlanmagan", category: "Ichimliklar", price: 18000, currency: "so'm", image: "picture/blanc bleu  gazsiz.jpg" },
-{ id: 6, title: "Blance Blue Gazlangan", category: "Ichimliklar", price: 18000, currency: "so'm", image: "picture/blanc blue gazli.jpg" },
-{ id: 7, title: "Chortoq 0.33", category: "Ichimliklar", price:18000, currency: "so'm", image: "picture/chortoq 0,33.jpg" },
-{ id: 8, title: "Coca Cola 250ml", category: "Ichimliklar", price: 10000, currency: "so'm", image: "picture/cola 250.jpg" },
-{ id: 9, title: "Natahtari Nok", category: "Ichimliklar", price:18000, currency: "so'm", image: "picture/Natahtalik.jpg" },
-{ id: 10, title: "Pepsi shisha 250ml", category: "Ichimliklar", price:12000, currency: "so'm", image: "picture/pepsi 250 shisha.jpg" },
-{ id: 11, title: "RedBull 250ml", category: "Ichimliklar", price: 20000, currency: "so'm", image: "picture/redbull 250 (1).jpg" }
+    {
+      id: 1, title: "Pepsi",
+      category: "Ichimliklar",
+      price: 12000,
+      bat: "450 ml",
+      image: "picture/pepsi 450.jpg"
+    },
+    {
+      id: 2, title: "Pepsi",
+      category: "Ichimliklar",
+      price: 10000,
+      bat: "250 ml",
+      image: "picture/pepsi 0.25.jpg"
+    },
+    {
+      id: 3, title: "Fanta",
+      category: "Ichimliklar",
+      price: 10000,
+      bat: "250ml",
+      image: "picture/fanta 250.jpg"
+    },
+    {
+      id: 4, title: "Adrenaline",
+      category: "Ichimliklar",
+      price: 12000,
+      bat: "250ml",
+      image: "picture/adreline .jpg"
+    },
+    {
+      id: 5, title: "Blance Blue",
+      category: "Ichimliklar",
+      price: 18000,
+      bat: "Gazlanmagan",
+      image: "picture/blanc bleu  gazsiz.jpg"
+    },
+    {
+      id: 6, title: "Blance Blue",
+      category: "Ichimliklar",
+      price: 18000,
+      bat: "Gazlangan",
+      image: "picture/blanc blue gazli.jpg"
+    },
+    {
+      id: 7, title: "Chortoq",
+      category: "Ichimliklar",
+      price: 18000,
+      bat: "0.33 ml",
+      image: "picture/chortoq 0,33.jpg"
+    },
+    {
+      id: 8, title: "Coca Cola",
+      category: "Ichimliklar",
+      price: 10000,
+      bat: "250 ml",
+      image: "picture/cola 250.jpg"
+    },
+    {
+      id: 9, title: "Natahtari",
+      category: "Ichimliklar",
+      price: 18000,
+      bat: "Nok",
+      image: "picture/Natahtalik.jpg"
+    },
+    {
+      id: 10, title: "Pepsi",
+      category: "Ichimliklar",
+      price: 12000,
+      bat: "shisha 250 ml",
+      image: "picture/pepsi 250 shisha.jpg"
+    },
+    {
+      id: 11, title: "RedBull",
+      category: "Ichimliklar",
+      price: 20000,
+      bat: "250 ml",
+      image: "picture/redbull 250 (1).jpg"
+    },
+
+
+
   ];
 
   fs.writeFileSync(dataFile, JSON.stringify(foods, null, 2));
