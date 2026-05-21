@@ -466,7 +466,7 @@ if (foods.length === 0) {
       category: "Ichimliklar",
       price: 28000,
       bat: "Malina",
-      image: "picture/photo_2026-05-21_16-07-21.jpg"
+      image: "picture/malina.jpg"
 
     },
     {
