@@ -529,7 +529,7 @@ if (foods.length === 0) {
           category: "Ichimliklar",
           price: 35000,
           bat: "Bubble tea",
-          image: "server/public/picture/aloe kulpinay bubble tea.jpg",
+          image: "picture/aloe kulpinay bubble tea.jpg",
         },
         {
           id: 11,
@@ -537,7 +537,7 @@ if (foods.length === 0) {
           category: "Ichimliklar",
           price: 35000,
           bat: "Bubble tea",
-          image: "server/public/picture/uzum tarvuz bubble tea.jpg",
+          image: "picture/uzum tarvuz bubble tea.jpg",
         },
         {
           id: 11,
@@ -545,7 +545,7 @@ if (foods.length === 0) {
           category: "Ichimliklar",
           price: 35000,
           bat: "Bubble tea",
-          image: "server/public/picture/chernika bubble tea.jpg",
+          image: "picture/chernika bubble tea.jpg",
         },
     {
           id: 11,
