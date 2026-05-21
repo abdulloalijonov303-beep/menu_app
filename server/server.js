@@ -434,6 +434,24 @@ if (foods.length === 0) {
       bat: "Malina",
       image: "picture/photo_3_2026-05-16_13-59-08.jpg"
 
+    }, 
+    {
+      id: 11,
+      title: "Tartaletka",
+      category: "Shirinliklar",
+      price: 16000,
+      bat: "Shokolad",
+      image: "picture/photo_11_2026-05-16_13-59-08.jpg"
+
+    },
+    {
+      id: 12,
+      title: "Cheesse cake",
+      category: "Shirinliklar",
+      price: 40000,
+      bat: "Malina",
+      image: "picture/photo_12_2026-05-16_13-59-08.jpg"
+
     },
     {
       id: 4,
@@ -498,24 +516,7 @@ if (foods.length === 0) {
       image: "picture/photo_10_2026-05-16_13-59-08.jpg"
 
     },
-    {
-      id: 11,
-      title: "Tartaletka",
-      category: "Shirinliklar",
-      price: 16000,
-      bat: "Shokolad",
-      image: "picture/photo_11_2026-05-16_13-59-08.jpg"
-
-    },
-    {
-      id: 12,
-      title: "Cheesse cake",
-      category: "Shirinliklar",
-      price: 40000,
-      bat: "Malina",
-      image: "picture/photo_12_2026-05-16_13-59-08.jpg"
-
-    },
+   
     {
       id: 1, title: "Pepsi",
       category: "Ichimliklar",
