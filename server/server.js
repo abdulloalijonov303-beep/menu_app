@@ -571,7 +571,7 @@ if (foods.length === 0) {
           category: "Coftea",
           price: 28000,
           bat: "Coffee Ice",
-          image: "picture/americaise.jpg",
+          image: "server/public/picture/americaise.png",
         },
         
         {
