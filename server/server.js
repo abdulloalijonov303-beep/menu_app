@@ -529,7 +529,7 @@ if (foods.length === 0) {
           category: "Ichimliklar",
           price: 35000,
           bat: "Bubble tea",
-          image: "picture/aloe kulpinay bubble tea.jpg",
+          image: "picture/.jpg",
         },
         {
           id: 11,
@@ -571,7 +571,7 @@ if (foods.length === 0) {
           category: "Coftea",
           price: 28000,
           bat: "Coffee Ice",
-          image: "picture/americano ice.jpg",
+          image: "picture/americaise.jpg",
         },
         
         {
