@@ -122,7 +122,7 @@ if (foods.length === 0) {
     },
         {
       id: 38,
-      title: "Evro Medovik Fistashka",
+      title: "Evro Medovik ",
       category: "Shirinliklar",
       price: 24000,
       bat: "Pistali",
@@ -131,16 +131,16 @@ if (foods.length === 0) {
     },
     {
       id: 1,
-      title: "Evro Medovik Shokolad",
+      title: "Evro Medovik ",
       category: "Shirinliklar",
       price: 24000,
-      bat: "Shocolad",
+      bat: "Shokolad",
       image: "picture/photo_1_2026-05-16_13-52-40.jpg"
     },
 
     {
       id: 2,
-      title: "Evro Medovik Karamel",
+      title: "Evro Medovik ",
       category: "Shirinliklar",
       price: 24000,
       bat: "Karamel",
@@ -149,7 +149,7 @@ if (foods.length === 0) {
     },
     {
       id: 3,
-      title: "Evro Medovik Malina",
+      title: "Evro Medovik ",
       category: "Shirinliklar",
       price: 24000,
       bat: "Malina",
@@ -158,7 +158,7 @@ if (foods.length === 0) {
     },
     {
       id: 4,
-      title: "Evro Medovik Limon",
+      title: "Evro Medovik ",
       category: "Shirinliklar",
       price: 24000,
       bat: "Limon",
@@ -167,7 +167,7 @@ if (foods.length === 0) {
     },
     {
       id: 5,
-      title: "Evro Medovik Shokolad & Malina",
+      title: "Evro Medovik ",
       category: "Shirinliklar",
       price: 24000,
       bat: "Shokolad & Malina",
