@@ -171,7 +171,7 @@ if (foods.length === 0) {
       category: "Shirinliklar",
       price: 40000,
       bat: "Malina",
-      image: "photo_12_2026-05-16_13-52-40.jpg"
+      image: "picture/photo_12_2026-05-16_13-52-40.jpg"
 
     },
     {
