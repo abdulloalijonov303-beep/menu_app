@@ -409,77 +409,17 @@ if (foods.length === 0) {
       image:"photo_38_2026-05-16_13-52-40.jpg"
         
     },
-    {
-       id: 1, title: "Pepsi 450ml",
-        category: "Ichimliklar",
-         price: 456, currency: "so'm",
-          image: "picture/pepsi 450.jpg"
-         },
-    { 
-      id: 2, title: "Pepsi 250ml",
-       category: "Ichimliklar",
-        price: 456, currency: "so'm",
-         image: "picture/pepsi 0.25.jpg"
-         },
-    { id: 3, title: "Fanta 250ml",
-       category: "Ichimliklar",
-        price: 456, currency: "so'm",
-         image: "picture/fanta 250.jpg"
-         },
-    { id: 4, title: "Adrenaline 250ml",
-       category: "Ichimliklar",
-        price: 456, currency: "so'm",
-         image: "picture/adreline .jpg" 
-        },
-    { 
-      id: 5, title: "Blance Blue Gazlanmagan",
-       category: "Ichimliklar",
-        price: 456, 
-        currency: "so'm",
-         image: "picture/blanc bleu  gazsiz.jpg" 
-        },
-    { 
-      id: 6, title: "Blance Blue Gazlangan",
-       category: "Ichimliklar",
-        price: 456,
-         currency: "so'm",
-          image: "picture/blanc blue gazli.jpg"
-         },
-    {
-       id: 7, title: "Chortoq 0.33",
-        category: "Ichimliklar",
-         price: 456,
-          currency: "so'm",
-           image: "picture/chortoq 0,33.jpg"
-           },
-    {
-       id: 8, title: "Coca Cola 250ml",
-        category: "Ichimliklar",
-         price: 456,
-          currency: "so'm",
-           image: "picture/cola 250.jpg" 
-          },
-    { 
-      id: 9,
-       title: "Natahtari Nok",
-        category: "Ichimliklar",
-         price: 456, currency: "so'm",
-          image: "picture/Natahtalik.jpg"
-         },
-    { 
-      id: 10,
-       title: "Pepsi ... 250ml",
-        category: "Ichimliklar",
-         price: 456, currency: "so'm",
-          image: "picture/pepsi 250 shisha.jpg" 
-        },
-    { 
-      id: 11, title: "RedBull 250ml",
-       category: "Ichimliklar",
-        price: 456, 
-        currency: "so'm",
-         image: "picture/redbull 250 (1).jpg" 
-        },
+   { id: 1, title: "Pepsi 450ml", category: "Ichimliklar", price: 12000, currency: "so'm", image: "picture/pepsi 450.jpg" },
+{ id: 2, title: "Pepsi 250ml", category: "Ichimliklar", price: 10000, currency: "so'm", image: "picture/pepsi 0.25.jpg" },
+{ id: 3, title: "Fanta 250ml", category: "Ichimliklar", price: 10000, currency: "so'm", image: "picture/fanta 250.jpg" },
+{ id: 4, title: "Adrenaline 250ml", category: "Ichimliklar", price: 12000, currency: "so'm", image: "picture/adreline .jpg"},
+{ id: 5, title: "Blance Blue Gazlanmagan", category: "Ichimliklar", price: 18000, currency: "so'm", image: "picture/blanc bleu  gazsiz.jpg" },
+{ id: 6, title: "Blance Blue Gazlangan", category: "Ichimliklar", price: 18000, currency: "so'm", image: "picture/blanc blue gazli.jpg" },
+{ id: 7, title: "Chortoq 0.33", category: "Ichimliklar", price:18000, currency: "so'm", image: "picture/chortoq 0,33.jpg" },
+{ id: 8, title: "Coca Cola 250ml", category: "Ichimliklar", price: 10000, currency: "so'm", image: "picture/cola 250.jpg" },
+{ id: 9, title: "Natahtari Nok", category: "Ichimliklar", price:18000, currency: "so'm", image: "picture/Natahtalik.jpg" },
+{ id: 10, title: "Pepsi shisha 250ml", category: "Ichimliklar", price:12000, currency: "so'm", image: "picture/pepsi 250 shisha.jpg" },
+{ id: 11, title: "RedBull 250ml", category: "Ichimliklar", price: 20000, currency: "so'm", image: "picture/redbull 250 (1).jpg" }
   ];
 
   fs.writeFileSync(dataFile, JSON.stringify(foods, null, 2));
