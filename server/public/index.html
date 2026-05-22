@@ -8,56 +8,7 @@
    <link rel="stylesheet" href="./style.css">
 
 </head>
-<select id="languageSelect">
-  <option value="uz">🇺🇿 UZ</option>
-  <option value="ru">🇷🇺 RU</option>
-  <option value="en">🇺🇸 EN</option>
-</select>
 
-<div id="google_translate_element" style="display:none;"></div>
-
-<script>
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement(
-    {
-      pageLanguage: 'uz',
-      includedLanguages: 'uz,ru,en'
-    },
-    'google_translate_element'
-  );
-}
-
-function changeLanguage(lang) {
-  const select = document.querySelector(".goog-te-combo");
-
-  if (select) {
-    select.value = lang;
-    select.dispatchEvent(new Event("change"));
-  }
-
-  localStorage.setItem("lang", lang);
-}
-
-document
-  .getElementById("languageSelect")
-  .addEventListener("change", function () {
-    changeLanguage(this.value);
-  });
-
-window.addEventListener("load", () => {
-  const savedLang = localStorage.getItem("lang");
-
-  if (savedLang) {
-    document.getElementById("languageSelect").value = savedLang;
-
-    setTimeout(() => {
-      changeLanguage(savedLang);
-    }, 1000);
-  }
-});
-</script>
-
-<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <body>
    <!-- LOCK SCREEN -->
    <div class="lock-screen" id="lockScreen">
@@ -81,6 +32,12 @@ window.addEventListener("load", () => {
          <div class="burger" onclick="toggleMenu(this)"> <span></span> <span></span> <span></span> </div>
     
          <div class="menu" id="menu2">
+             <select id="languageSelect">
+      <option value="uz">🇺🇿 UZ</option>
+      <option value="ru">🇷🇺 RU</option>
+      <option value="en">🇺🇸 EN</option>
+    </select>
+    <div id="google_translate_element" style="display:none;"></div>
             <div class="buttons"> <button onclick="filterFood('All')">Hammasi</button> <button
                   onclick="filterFood('Taom')">Taomlar</button> <button
                   onclick="filterFood('Shirinliklar')">Shirinliklar</button>
@@ -244,7 +201,59 @@ setLang(lang);
 
 
    </script>
+  <script>
 
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {
+          pageLanguage: 'uz',
+          includedLanguages: 'uz,ru,en'
+        },
+        'google_translate_element'
+      );
+    }
+
+    function changeLanguage(lang) {
+
+      const select = document.querySelector(".goog-te-combo");
+
+      if(select){
+        select.value = lang;
+        select.dispatchEvent(new Event("change"));
+      }
+
+      localStorage.setItem("lang", lang);
+    }
+
+    document
+      .getElementById("languageSelect")
+      .addEventListener("change", function () {
+
+        changeLanguage(this.value);
+
+      });
+
+    window.addEventListener("load", () => {
+
+      const savedLang = localStorage.getItem("lang");
+
+      if(savedLang){
+
+        document.getElementById("languageSelect").value = savedLang;
+
+        setTimeout(() => {
+
+          changeLanguage(savedLang);
+
+        },1000);
+
+      }
+
+    });
+
+  </script>
+
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 
 </html>
