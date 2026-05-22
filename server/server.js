@@ -440,6 +440,15 @@ if (foods.length === 0) {
       image: "picture/walfk2sb.jpg"
 
     },
+       {
+      id: 39,
+      title: "Muzqaymoq",
+      category: "Muzqaymoq",
+      price: 70000,
+      bat: "banan,qulpinoy,shokolad",
+      image: "picture/icecream.jpg"
+
+    },
 
         {
       id: 1,
