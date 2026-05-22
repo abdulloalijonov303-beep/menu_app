@@ -444,8 +444,8 @@ if (foods.length === 0) {
       id: 39,
       title: "Muzqaymoq",
       category: "Muzqaymoq",
-      price: 70000,
-      bat: "banan,qulpinoy,shokolad",
+      price: 20000,
+      bat: "Shokolad,qulpinoy,Qaqosoviy",
       image: "picture/icecream.jpg"
 
     },
