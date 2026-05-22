@@ -413,6 +413,24 @@ if (foods.length === 0) {
       image: "picture/photo_33_2026-05-16_13-52-40.jpg"
 
     },
+       {
+      id: 39,
+      title: "Waffl Gankong",
+      category: "Waflilar",
+      price: 80000,
+      bat: "Kiwi,Banan,Qulpnoy,Mandarin",
+      image: "picture/waflk.jpg"
+
+    },
+       {
+      id: 39,
+      title: "Waffl Gankong Kichik",
+      category: "Waflilar",
+      price: 60000,
+      bat: "Kiwi,Banan,Qulpnoy,Mandarin",
+      image: "picture/waflk2.jpg"
+
+    },
 
         {
       id: 1,
