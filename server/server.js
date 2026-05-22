@@ -431,6 +431,15 @@ if (foods.length === 0) {
       image: "picture/waflk2.jpg"
 
     },
+       {
+      id: 39,
+      title: "Waffl Gankong с Собой",
+      category: "Waflilar",
+      price: 70000,
+      bat: "Kiwi,Banan,Qulpnoy,Mandarin",
+      image: "picture/waflk2sb.jpg"
+
+    },
 
         {
       id: 1,
