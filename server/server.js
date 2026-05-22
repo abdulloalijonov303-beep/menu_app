@@ -547,6 +547,31 @@ if (foods.length === 0) {
           bat: "Bubble tea",
           image: "picture/chernika bubble tea.jpg",
         },
+           
+        {
+          id: 11,
+          title: "Bardak Stakan",
+          category: "Coftea",
+          price: 5000,
+          bat: "Choy",
+          image: "picture/bardak.jpg",
+        },
+        {
+          id: 11,
+          title: "Bardak Katta",
+          category: "Coftea",
+          price: 5000,
+          bat: "Choy",
+          image: "picture/bardakk.jpg",
+        },
+        {
+          id: 12,
+          title: "Bardak Kichik",
+          category: "Coftea",
+          price: 5000,
+          bat: "Choy",
+          image: "picture/bardaki.jpg",
+        },
     {
           id: 11,
           title: "Espresso",
@@ -658,15 +683,7 @@ if (foods.length === 0) {
           image: "picture/tinchlantiruvchi.jpg",
         },
         
-       
-        {
-          id: 11,
-          title: "Bardak",
-          category: "Coftea",
-          price: 35000,
-          bat: "Choy",
-          image: "picture/bardak.jpg",
-        },
+    
    
     {
       id: 1, title: "Pepsi",
@@ -681,6 +698,20 @@ if (foods.length === 0) {
       price: 10000,
       bat: "250 ml",
       image: "picture/pepsi 0.25.jpg"
+    },
+    {
+      id: 2, title: "Cola",
+      category: "Salqin Ichimliklar",
+      price: 10000,
+      bat: "250 ml banka",
+      image: "picture/colabanka250.jpg"
+    },
+    {
+      id: 2, title: "Cola",
+      category: "Salqin Ichimliklar",
+      price: 10000,
+      bat: "450 ml banka",
+      image: "picture/colabanka250.jpg"
     },
     {
       id: 3, title: "Fanta",
