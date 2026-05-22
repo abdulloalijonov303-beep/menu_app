@@ -428,7 +428,7 @@ if (foods.length === 0) {
       category: "Waflilar",
       price: 60000,
       bat: "Kiwi,Banan,Qulpnoy,Mandarin",
-      image: "picture/waflk2.jpg"
+      image: "picture/walfk2.jpg"
 
     },
        {
@@ -437,7 +437,7 @@ if (foods.length === 0) {
       category: "Waflilar",
       price: 70000,
       bat: "Kiwi,Banan,Qulpnoy,Mandarin",
-      image: "picture/waflk2sb.jpg"
+      image: "picture/walfk2sb.jpg"
 
     },
 
