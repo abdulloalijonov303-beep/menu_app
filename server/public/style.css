@@ -579,3 +579,11 @@ margin: 10px;
 body {
   top: 0 !important;
 }
+
+.goog-te-banner-frame{
+display:none !important;
+}
+
+body{
+top:0 !important;
+}
