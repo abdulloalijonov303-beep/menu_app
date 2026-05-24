@@ -104,7 +104,7 @@ if (foods.length === 0) {
     },
     {
       id: 16,
-      title: "Cheese cake Yogoqli ",
+      title: "Cheese cake Yongoqli ",
       category: "Shirinliklar",
       price: 40000,
       bat: "Yongoqli",
@@ -397,7 +397,7 @@ if (foods.length === 0) {
     },
     {
       id: 37,
-      title: "Kurosan",
+      title: "Kurasan",
       category: "Shirinliklar",
       price: 25000,
       bat: "Malina",
@@ -406,7 +406,7 @@ if (foods.length === 0) {
     },
        {
       id: 33,
-      title: "Kurosan",
+      title: "Kurasan",
       category: "Shirinliklar",
       price: 25000,
       bat: "Shokolad",
